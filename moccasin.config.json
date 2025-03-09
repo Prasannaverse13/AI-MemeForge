@@ -1,0 +1,27 @@
+{
+  "contracts": {
+    "Token": {
+      "path": "./contracts/Token.vy",
+      "language": "vyper",
+      "version": "0.3.7"
+    }
+  },
+  "networks": {
+    "mumbai": {
+      "url": "https://rpc-mumbai.maticvigil.com",
+      "chainId": 80001,
+      "accounts": {
+        "mnemonic": "${MNEMONIC}"
+      }
+    }
+  },
+  "test": {
+    "coverage": true,
+    "gas": true,
+    "compiler": {
+      "vyper": {
+        "version": "0.3.7"
+      }
+    }
+  }
+}
